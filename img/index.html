@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемы про Шанова Дмитрия-2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Мемы про Шанова Дмитрия - 2025</h1>
+    <p>Самые свежие и смешные мемы о легендарном Шанове!</p>
+</header>
+
+<nav>
+    <a href="best_memes.html">Лучшие мемы</a>
+    <a href="propose.html">Предложить мем</a>
+    <button id="toggleShanovInfo">О Шанове</button>
+</nav>
+
+<main>
+    <div id="about_shanov">
+        <h2>Кто такой Шанов Дмитрий?</h2>
+        <div id="shanovInfo">
+            <p>1. ИМЯ: ШАНОВ ДМИТРИЙ АЛЕКСАНДРОВИЧ</p>
+            <p>2. ПРОЖИВАЮЩИЙ В КАНАВЕ</p>
+            <p>3. МАМА - НЕТУ, ПАПА - С ХЛЕБОМ</p>
+        </div>
+    </div>
+
+    <div class="meme">
+        <img src="1.jpg" alt="Мем 1 про Шанова" style="height: 120px">
+        <p>Подпись к мему 1: Шанов всегда готов к новым вызовам!</p>
+        <div class="spoiler" onclick="toggleSpoiler(this)">
+            Показать продолжение
+        </div>
+        <div class="spoiler-content">
+            <p>И всегда выходит победителем!</p>
+        </div>
+    </div>
+
+    <div class="meme">
+        <img src="7.jpg" alt="Мем 2 про Шанова" style="height: 80px">
+        <p>Подпись к мему 2: Шанов знает толк в хорошем отдыхе!</p>
+        <div class="spoiler" onclick="toggleSpoiler(this)">
+            Показать продолжение
+        </div>
+        <div class="spoiler-content">
+            <p>Релакс – это его второе имя!</p>
+        </div>
+    </div>
+
+    <!-- Добавьте больше мемов здесь -->
+
+</main>
+
+<footer>
+    &copy; 2025 Сайт мемов про Дмитрия Шанова, любимого всеми (или нет). Все права защищены, кроме прав Шанова.
+</footer>
+
+<script>
+    function toggleSpoiler(element) {
+        const spoilerContent = element.nextElementSibling;
+        spoilerContent.classList.toggle('active');
+        if (spoilerContent.classList.contains('active')) {
+            element.textContent = 'Скрыть продолжение';
+        } else {
+            element.textContent = 'Показать продолжение';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleShanovInfoButton = document.getElementById('toggleShanovInfo');
+        const shanovInfo = document.getElementById('shanovInfo');
+
+        toggleShanovInfoButton.addEventListener('click', function() {
+            shanovInfo.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

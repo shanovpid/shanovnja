@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #2980b9;
+}
+
+nav {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #c0392b;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.meme {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Чтобы картинки были по центру */
+}
+
+.meme img {
+    max-width: 80%;
+    /* Ограничиваем ширину картинок, чтобы не вылезали */
+    height: auto;
+    margin-bottom: 10px;
+    /* Добавляем небольшой отступ снизу */
+}
+
+.spoiler {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.spoiler-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.spoiler-content.active {
+    display: block;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+/* Стили для страницы "О Шанове" */
+#about_shanov {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about_shanov h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Стили для разделов "Предложить мем" */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+section h2 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+section ul.active {
+    display: block;
+}
+
+section li {
+    margin-bottom: 10px;
+}
+
+/*Стили для "Предложить мем" */
+#propose p {
+    text-align: center;
+}
+
+#shanovInfo {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#shanovInfo.active {
+    display: block;
+}
+
+#showMemesButton {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    /* Зеленый цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#showMemesButton:hover {
+    background-color: #27ae60;
+    /* Более темный зеленый при наведении */
+}
+
+.meme-container {
+    display: none;
+    /* Скрываем контейнер с мемами по умолчанию */
+}
+
+.meme-container.active {
+    display: block;
+    /* Показываем контейнер с мемами, когда класс active применен */
+}
